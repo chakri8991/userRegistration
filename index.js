@@ -15,10 +15,7 @@ const dbConfig = {
   database: "user_registration",
 };
 
-const twilioClient = new twilio(
-  "AC5245f5d5c5b1d214fb2e16c6de95ef0b",
-  "0e925a682be8539e1b451cb5b61b808a"
-);
+const twilioClient = new twilio("account sid", "twilio token");
 const twilioPhoneNumber = "YOUR_TWILIO_PHONE_NUMBER";
 
 app.use(express.json());
